@@ -1,0 +1,94 @@
+<h2>Sign up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :messowner_first_name, "First Name:" %><br />
+    <%= f.text_field :messowner_first_name, autofocus: true %>
+  </div>
+
+   <div class="field">
+    <%= f.label :messowner_last_name, "Last Name:" %><br />
+    <%= f.text_field :messowner_last_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :messowner_mobile_no, "Mobile Number:" %><br />
+    <%= f.text_field :messowner_mobile_no %>
+  </div>
+
+  <div class="field">
+    <%= f.label :messowner_alt_mobile_no, "Alternative Mobile No:" %><br />
+    <%= f.text_field :messowner_alt_mobile_no %>
+  </div>
+
+  <div class="field">
+    <%= f.label :messowner_rate_per_month, "Mess Rent/Month" %><br />
+    <%= f.text_field :messowner_rate_per_month %>
+  </div>
+
+  <div class="field">
+    <%= f.label :messowner_rate_per_tiffin, "Mess Rent/Tiffin" %><br />
+    <%= f.text_field :messowner_rate_per_tiffin %>
+  </div>
+
+  <div class="field">
+    <%= f.label :messowner_time_morning_from, "Mess Start Time(Morning)" %><br />
+    <%= f.text_field :messowner_time_morning_from %>
+  </div>
+
+<div class="field">
+    <%= f.label :messowner_time_morning_to, "Mess Close Time(Morning)" %><br />
+    <%= f.text_field :messowner_time_morning_to %>
+  </div>
+
+  <div class="field">
+    <%= f.label :messowner_time_evening_from, "Mess Star Time(Evening)" %><br />
+    <%= f.text_field :messowner_time_evening_from %>
+  </div>
+
+  <div class="field">
+    <%= f.label :messowner_time_evening_to, "Mess Close Time(Evening)" %><br />
+    <%= f.text_field :messowner_time_evening_to %>
+  </div>
+
+  <div class="field">
+    <%= f.label :messowner_tiffin_cancle_time_morning, "Mess Tiffin Cancle Time(Morning)" %><br />
+    <%= f.text_field :messowner_tiffin_cancle_time_morning %>
+  </div>
+
+  <div class="field">
+    <%= f.label :messowner_tiffin_cancle_time_evening, "Mess Tiffin Cancle Time(Evening)" %><br />
+    <%= f.text_field :messowner_tiffin_cancle_time_evening %>
+  </div>
+
+  <div class="field">
+    <%= f.label :messowner_address, "Mess Address" %><br />
+    <%= f.text_field :messowner_address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @validatable %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "messowners/shared/links" %>
