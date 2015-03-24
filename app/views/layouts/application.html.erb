@@ -12,6 +12,7 @@
 
  <% if messowner_signed_in? %>
    <%= link_to "SignOut", destroy_messowner_session_path %>
+   <%= link_to "Create Member", new_member_path %>
  <% else %>
    <%= link_to "SignIn", new_messowner_session_path %>
    <%= link_to "SignUp", new_messowner_registration_path %>
