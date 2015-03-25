@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150324200422) do
+ActiveRecord::Schema.define(version: 20150325122253) do
+
+  create_table "calenders", force: :cascade do |t|
+    t.date     "cal_date"
+    t.integer  "cal_no_tiffin"
+    t.integer  "cal_rate"
+    t.boolean  "cal_time"
+    t.text     "cal_old"
+    t.integer  "member_id"
+    t.integer  "messowner_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
   create_table "members", force: :cascade do |t|
     t.string   "mem_first_name"
@@ -76,8 +88,9 @@ ActiveRecord::Schema.define(version: 20150324200422) do
   create_table "terms", force: :cascade do |t|
     t.string   "title"
     t.text     "term_text"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "messowner_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
 end

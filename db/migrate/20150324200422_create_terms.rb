@@ -3,6 +3,7 @@ class CreateTerms < ActiveRecord::Migration
     create_table :terms do |t|
       t.string :title
       t.text :term_text
+      t.integer :messowner_id
 
       t.timestamps null: false
     end

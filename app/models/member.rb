@@ -5,8 +5,10 @@ class Member < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
          has_and_belongs_to_many :messowners
+         has_many :calenders
+         has_many :terms
 
-         before_validation :set_password
+       before_validation :set_password
          def set_password
          	p "fggfhgfh"
          	self.password="123456789"

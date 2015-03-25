@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   
   
 
+  get 'calenders/new'
+
   devise_for :messowners
   resources :members
   get 'home/index'

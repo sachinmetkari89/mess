@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cal_date: 2015-03-25
+  cal_no_tiffin: 1
+  cal_rate: 1
+  cal_time: false
+  cal_old: MyText
+  member_id: 1
+  messowner_id: 1
+
+two:
+  cal_date: 2015-03-25
+  cal_no_tiffin: 1
+  cal_rate: 1
+  cal_time: false
+  cal_old: MyText
+  member_id: 1
+  messowner_id: 1
