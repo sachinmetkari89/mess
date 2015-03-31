@@ -35,9 +35,11 @@ group :development do
   gem "binding_of_caller"
   gem	'annotate'
 end
+########################For Windows#######################
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
-
-
+gem 'coffee-script-source', '1.8.0'
+#######################bundle update coffee-script-source################
+########################For Windows#######################
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
