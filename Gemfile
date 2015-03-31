@@ -30,6 +30,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'unicorn'
 
 # Use Capistrano for deployment
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem	'annotate'
+end
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
+
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
