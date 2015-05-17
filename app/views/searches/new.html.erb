@@ -1,0 +1,55 @@
+
+      
+      <div class="ui-grid-solo">
+           <h1 class="intro">Contact Us</h1>
+      </div>
+
+<div class="contact-form">
+            <p class="mandatory">
+              * indicates Mandatory Field
+            </p>
+<%= form_for @searches  do |f| %>
+  
+
+  <div class="field">
+    <%= f.label :country, "Country:" %><br />
+    <%= f.text_field :country, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :state, "State:" %><br />
+    <%= f.text_field :state %>
+  </div>
+
+  <div class="field">
+    <%= f.label :district, "District:" %><br />
+    <%= f.text_field :district %>
+  </div>
+
+  <div class="field">
+    <%= f.label :taluka, "Taluka:" %><br />
+    <%= f.text_field :taluka %>
+  </div>
+
+  <div class="field">
+    <%= f.label :area, "Area:" %><br />
+    <%= f.text_field :area %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pincode, "PinCode:" %><br />
+    <%= f.text_field :pincode %>
+  </div>
+
+  <div class="field">
+    <%= f.submit "Send Message" %><br />
+    
+  </div>
+ <% end %>
+</div>
+    <div class="footer text-center" data-position="fixed">
+          <p>COPYRIGHT 2013. ALL RIGHTS RESERVED!</p>
+    </div>
+
+
+   

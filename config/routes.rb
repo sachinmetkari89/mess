@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
   
-  
-
-  get 'calenders/new'
-
   devise_for :messowners
   resources :members
+  resources :calenders
+  
   get 'home/index'
   root to: "home#index"
-   
+  
+  resources :abouts
+  resources :contacts
+  resources :searches
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

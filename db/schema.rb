@@ -11,7 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150325122253) do
+ActiveRecord::Schema.define(version: 20150516131115) do
+
+  create_table "abouts", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "calenders", force: :cascade do |t|
     t.date     "cal_date"
@@ -23,6 +28,16 @@ ActiveRecord::Schema.define(version: 20150325122253) do
     t.integer  "messowner_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+  end
+
+  create_table "contacts", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "mobileno"
+    t.string   "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "members", force: :cascade do |t|
@@ -84,6 +99,17 @@ ActiveRecord::Schema.define(version: 20150325122253) do
 
   add_index "messowners", ["email"], name: "index_messowners_on_email", unique: true
   add_index "messowners", ["reset_password_token"], name: "index_messowners_on_reset_password_token", unique: true
+
+  create_table "searches", force: :cascade do |t|
+    t.string   "country"
+    t.string   "state"
+    t.string   "district"
+    t.string   "taluka"
+    t.string   "area"
+    t.string   "pincode"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "terms", force: :cascade do |t|
     t.string   "title"

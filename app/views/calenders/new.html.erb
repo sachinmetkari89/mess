@@ -1,2 +1,28 @@
-<h1>Calenders#new</h1>
-<p>Find me in app/views/calenders/new.html.erb</p>
+
+<br/><br/><strong><h2>New Calender</h2></strong>
+
+<%= form_for @calender do |f| %>
+  
+  <%= f.label :messowner_id, "Messowner id:" %>
+  <%= f.text_field :messowner_id, value: "current_messowner" %><br/><br/>
+
+  <%= f.label :member_id, "Member id:" %>
+  <%= f.text_field :member_id %><br/><br/>
+
+  <%= f.label :cal_date, "Enter date:" %>
+  <%= f.date_field :cal_date %><br/><br/>
+
+  <%= f.label :cal_no_tiffin, "Number of Tiffin:" %>
+  <%= f.text_field :cal_no_tiffin %><br/><br/>
+
+  <%= f.label :cal_rate, "Enter Rate/Tiffin:" %>
+  <%= f.text_field :cal_rate %><br/><br/>
+
+  <%= f.label :cal_time, "Enter Time:" %>
+  <%= f.text_field :cal_date %><br/><br/>
+
+  <%= f.label :cal_old, "Old:" %>
+  <%= f.text_field :cal_old %><br/><br/>
+  
+  <%= f.submit %>
+<% end %>
