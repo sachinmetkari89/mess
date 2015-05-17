@@ -4,10 +4,9 @@
 #
 #  id            :integer          not null, primary key
 #  cal_date      :date
-#  cal_no_tiffin :integer
-#  cal_rate      :integer
-#  cal_time      :boolean
-#  cal_old       :text
+#  cal_no_tiffin :integer          default(1)
+#  rate          :integer
+#  time          :boolean
 #  member_id     :integer
 #  messowner_id  :integer
 #  created_at    :datetime         not null

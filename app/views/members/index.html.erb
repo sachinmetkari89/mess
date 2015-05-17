@@ -20,7 +20,7 @@
     <% @members.each do |member| %>
       <tr>
         <td><%= member.id %></td>
-        <td><%= member.mem_first_name %></td>
+        <td><%= link_to member.mem_first_name, member_calenders_path(member) %></td>
         <td><%= member.mem_last_name %></td>
         <td><%= member.mem_mobile_no %></td>
         <td><%= member.mem_alt_mobile_no %></td>

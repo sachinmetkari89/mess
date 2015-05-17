@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   get 'calenders/new'
 
   devise_for :messowners
-  resources :members
+  resources :members do
+    resources :calenders
+  end
   get 'home/index'
   root to: "home#index"
    

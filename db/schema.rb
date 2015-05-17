@@ -15,14 +15,13 @@ ActiveRecord::Schema.define(version: 20150325122253) do
 
   create_table "calenders", force: :cascade do |t|
     t.date     "cal_date"
-    t.integer  "cal_no_tiffin"
-    t.integer  "cal_rate"
-    t.boolean  "cal_time"
-    t.text     "cal_old"
+    t.integer  "cal_no_tiffin", default: 1
+    t.integer  "rate"
+    t.boolean  "time"
     t.integer  "member_id"
     t.integer  "messowner_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "members", force: :cascade do |t|
