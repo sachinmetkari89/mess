@@ -1,0 +1,50 @@
+
+      
+      <div class="ui-grid-solo">
+           <h1 class="intro">Contact Us</h1>
+      </div>
+
+<div class="contact-form">
+            <p class="mandatory">
+              * indicates Mandatory Field
+            </p>
+<%= form_for @contact  do |f| %>
+   <div data-role="fieldcontain" class="text-field">
+  
+     <%= f.label :first_name, "First Name:" %><br />
+     <%= f.text_field :first_name, autofocus: true %>
+  </div>
+
+  <div data-role="fieldcontain" class="text-field">
+    <%= f.label :last_name, "Last Name:" %><br />
+    <%= f.text_field :last_name %>
+  </div>
+
+  <div data-role="fieldcontain" class="text-field">
+    <%= f.label :email, "Email:" %><br />
+    <%= f.text_field :email %>
+  </div>
+
+  <div data-role="fieldcontain" class="text-field">
+    <%= f.label :mobileno, "Mobile Number:" %><br />
+    <%= f.text_field :mobileno %>
+  </div>
+
+  <div data-role="fieldcontain" class="text-field">
+    <%= f.label :message, "Message:" %><br />
+    <%= f.text_field :message %>
+  </div>
+
+  <div data-role="fieldcontain" class="text-field">
+    <%= f.submit "Send Message" %><br />
+    
+  </div>
+ <% end %>
+</div>
+    <div class="footer text-center" data-position="fixed">
+          <p>COPYRIGHT 2013. ALL RIGHTS RESERVED!</p>
+    </div>
+
+
+   
+   

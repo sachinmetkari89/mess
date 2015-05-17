@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require awesomechart
+//= require fullcalendar
+//= require fullcalendar.min
+//= require jquery-1.9.1.min
+//= require jquery-ui.custom.min
+//= require jquery.flexslider-min
+//= require jquery.min
+//= require jquery.mobile-1.3.0.min
+//= require main
+//= require moment.min
+ 
