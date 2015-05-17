@@ -30,6 +30,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'unicorn'
 
 # Use Capistrano for deployment
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem	'annotate'
+end
+########################For Windows#######################
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
+gem 'coffee-script-source', '1.8.0'
+#######################bundle update coffee-script-source################
+########################For Windows#######################
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
